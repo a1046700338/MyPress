@@ -4,7 +4,7 @@
 ## 使用
 请克隆该分支:origin
 ```shell
-git clone git@github.com:a1046700338/MyPress.git
+git clone -b origin git@github.com:a1046700338/MyPress.git
 ```
 
 随后
