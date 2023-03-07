@@ -1,7 +1,7 @@
 {
   "name": "vuepress",
   "version": "1.0.0",
-  "description": "sakurafeiyuBlog power vuepress",
+  "description": "MyPress is Docs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,7 +23,14 @@
     "url": "https://github.com/a1046700338/MyPress/issues"
   },
   "homepage": "https://github.com/a1046700338/MyPress#readme",
-  "dependencies": {
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.9.9",
+    "@vuepress/plugin-back-to-top": "^1.9.9",
+    "@vuepress/plugin-blog": "^1.9.4",
+    "@vuepress/plugin-medium-zoom": "^1.9.9",
+    "@vuepress/plugin-nprogress": "^1.9.9",
+    "@vuepress/plugin-pwa": "^1.9.9",
+    "@vuepress/theme-blog": "^2.3.3",
     "vuepress": "^1.9.9"
   }
 }
