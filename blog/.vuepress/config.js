@@ -1,6 +1,6 @@
 module.exports = {
     title: '花诽语Blog',
-    description: '',
+    description: '基于VuePress的Blog',
     theme: '@vuepress/theme-blog',
     dateFormat: 'YYYY-MM-DD',
     plugins: [
