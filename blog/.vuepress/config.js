@@ -5,8 +5,26 @@ module.exports = {
     dateFormat: 'YYYY-MM-DD',
     plugins: [
         ['@vuepress/back-to-top'],
+        [
+            '@vssue/vuepress-plugin-vssue', {
+                platform: 'github',
+                // 其他的 Vssue 配置
+                owner: 'sakurafeiyu',
+                locale: 'zh-CN',
+                repo: 'a1046700338/MyPress',
+                clientId: 'd6254a96649f1d95adfa',
+                clientSecret: '6eada70e761b5eecc5b5d871b2c6062a0db7c077',
+            }
+        ],
         ['@vuepress/nprogress'],
-        ['@vuepress/medium-zoom'],
+        ['@vuepress/medium-zoom', {
+            selector: 'img.zoom-custom-imgs',
+            // medium-zoom options here
+            // See: https://github.com/francoischalifour/medium-zoom#options
+            options: {
+                margin: 16
+            }
+        }],
         ['@vuepress/active-header-links'],
         ['@vuepress/pwa', {
             serviceWorker: false,
@@ -23,8 +41,12 @@ module.exports = {
                         // Path of the `entry page` (or `list page`)
                         path: '/posts/',
                         pagination: {
-                            lengthPerPage: 2,
+                            prevText: '上一页',
+                            nextText: '下一页',
+                            lengthPerPage: 6,
                         },
+                        itemLayout: 'Post',
+                        itemPermalink: '/post/:year/:month/:day/:slug',
                     },
                 ],
                 frontmatters: [
@@ -49,7 +71,7 @@ module.exports = {
         nav: [
             { text: '首页', link: '/' },
             { text: '文章', link: '/posts/' },
-            { text: '分类', link: '/tag/' },
+            { text: '分类', link: '/tags/' },
             { text: '关于', link: '/about/' },
         ],
         footer: {
