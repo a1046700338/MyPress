@@ -4,15 +4,21 @@ date: 2023-03-07 23:55:09
 sidebar: false
 ---
 
-[![](https://data.jsdelivr.com/v1/package/gh/a1046700338/a1046700338.github.io/badge)](https://www.jsdelivr.com/package/gh/a1046700338/a1046700338.github.io)
-
 # 关于
-做这个**个人博客**的目的主要还是为了方便自己记录一些笔记，分享一些知识，提升web应用能力。  
+关于这个网站的目的主要还是为了方便自己记录一些笔记，分享一些知识，提升web应用能力。  
 对此项目有任何建议欢迎Email我，最后，感谢您的阅读。
 
-- [x] music页
-- [ ] 网页内嵌套视频播放器
-- [x] 导航页
+<Content slot-key="todo-list"/>
+::: slot todo-list
+<div>
+    <input name="todo-list" type="checkbox" checked>导航页
+    <br/>
+    <input name="todo-list" type="checkbox">music页
+    <br/>
+    <input name="todo-list" type="checkbox">网页内嵌套视频播放器
+    <br/>
+</div>
+:::
 
 # 内容
 - **Blog**
@@ -22,8 +28,7 @@ sidebar: false
 
 # 地图
 - 主站[sakurafeiyu.top](https://sakurafeiyu.top/)
-- 导航站[sakurafeiyu.top/bookmark/](https://sakurafeiyu.top/bookmark/)
-
+- ...
 # 联系方式
 <div>
 <i class="iconfont icon-email"></i>

@@ -3,6 +3,7 @@ module.exports = {
     description: '基于VuePress的Blog',
     theme: '@vuepress/theme-blog',
     dateFormat: 'YYYY-MM-DD',
+    // permalink: "/:year/:month/:day/:slug",
     plugins: [
         ['@vuepress/back-to-top'],
         [
@@ -46,7 +47,6 @@ module.exports = {
                             lengthPerPage: 6,
                         },
                         itemLayout: 'Post',
-                        itemPermalink: '/post/:year/:month/:day/:slug',
                     },
                 ],
                 frontmatters: [

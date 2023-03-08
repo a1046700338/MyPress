@@ -1,5 +1,5 @@
 # MyPress
-基于VuePress修改的个人笔记网站
+基于[VuePress](https://www.vuepress.cn/)修改的个人笔记网站
 
 ## 使用
 请克隆该分支:origin
