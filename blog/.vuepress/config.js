@@ -1,6 +1,6 @@
 module.exports = {
     title: '花诽语Blog',
-    description: 'MyPress is Docs',
+    description: '',
     theme: '@vuepress/theme-blog',
     dateFormat: 'YYYY-MM-DD',
     plugins: [
@@ -12,8 +12,8 @@ module.exports = {
                 owner: 'sakurafeiyu',
                 locale: 'zh-CN',
                 repo: 'a1046700338/MyPress',
-                clientId: 'd6254a96649f1d95adfa',
-                clientSecret: '6eada70e761b5eecc5b5d871b2c6062a0db7c077',
+                clientId: '',
+                clientSecret: '',
             }
         ],
         ['@vuepress/nprogress'],
@@ -71,8 +71,7 @@ module.exports = {
         nav: [
             { text: '首页', link: '/' },
             { text: '文章', link: '/posts/' },
-            { text: '分类', link: '/tags/' },
-            { text: '关于', link: '/about/' },
+            { text: '关于', link: '/about/' }
         ],
         footer: {
             contact: [
