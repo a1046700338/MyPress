@@ -13,8 +13,8 @@ module.exports = {
                 owner: 'sakurafeiyu',
                 locale: 'zh-CN',
                 repo: 'a1046700338/MyPress',
-                clientId: '',
-                clientSecret: '',
+                // 为了避免泄露 clientId,clientSecret 我已经写死在源码里了
+                clientId: 'd6254a96649f1d95adfa'
             }
         ],
         ['@vuepress/nprogress'],
@@ -41,12 +41,14 @@ module.exports = {
                         dirname: '_posts',
                         // Path of the `entry page` (or `list page`)
                         path: '/posts/',
+                        itemPermalink: '/post/:year/:month/:day/:slug',
                         pagination: {
                             prevText: '上一页',
                             nextText: '下一页',
                             lengthPerPage: 6,
                         },
-                        itemLayout: 'Post',
+                        layout: 'MyIndexPost',
+                        itemLayout: 'MyPost'
                     },
                 ],
                 frontmatters: [
@@ -86,6 +88,14 @@ module.exports = {
             ],
             copyright: [
                 {
+                    text: '蜀ICP备2022016473号-1',
+                    link: 'https://beian.miit.gov.cn/'
+                },
+                {
+                    text: '川公网安备 51030002000194号',
+                    link: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51030002000194'
+                },
+                {
                     text: 'Copyright © 2023-present 花诽语',
                     link: 'https://sakurafeiyu.top',
                 },
@@ -114,5 +124,5 @@ module.exports = {
         ['link', { rel: 'mask-icon', href: '../icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
         ['meta', { name: 'msapplication-TileImage', content: '../icons/msapplication-icon-144x144.png' }],
         ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
-    ]
+    ],
 }

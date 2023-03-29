@@ -5,10 +5,29 @@ tags:
 - 教程
 - vuepress
 ---
-# 使用组件
+# 全局组件
+定义全局组件，当你的VuePress每个页面都需要自定义容器时使用，它会像`footer` `header`那样全局布局。
+> 原文：https://www.vuepress.cn/plugin/official/plugin-register-components.html#vuepress-plugin-register-components
 
-> 原文：https://www.vuepress.cn/guide/using-vue.html#%E4%BD%BF%E7%94%A8%E7%BB%84%E4%BB%B6
-
+引入插件
+```sh
+npm install -D @vuepress/plugin-register-components
+```
+配置config
+```js
+module.exports = {
+  plugins: [
+    [
+      '@vuepress/register-components',
+      {
+        componentsDir: [
+         'demo1'
+        ]
+      }
+    ]
+  ]
+}
+```
 在`.vuepress`中创建`components`目录结构如下：
 ```
 .

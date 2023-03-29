@@ -30,7 +30,7 @@ sidebar: false
 
 :::
 ```
-在布局组件中利用`Content`（你可能需要看一下关于[布局组件的应用](./2023/03/08/vuepress组件/)）组件来使用该插槽：
+在布局组件中利用`Content`组件来使用该插槽：
 ```vue
 <Content slot-key="name"/>
 ```
