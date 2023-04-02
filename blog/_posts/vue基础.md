@@ -1,9 +1,11 @@
 ---
 title: vue基础
 date: 2023-3-9
+categories:
+- vue
 tags:
 - 笔记
-- vue
+- 基础
 - 学习
 ---
 # Vue

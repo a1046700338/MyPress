@@ -2,6 +2,8 @@
 title: React Native
 date: 2023-3-10
 author: sakurafeiyu
+categories:
+- React
 tags:
 - ReactNative
 - 安卓应用

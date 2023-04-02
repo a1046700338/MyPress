@@ -1,9 +1,12 @@
 ---
 title: vuepress自定义容器
 date: 2023-3-8 18:32:22
-tags:
-- markdown
+categories:
 - vuepress
+tags:
+- 组件
+- vue
+- markdown
 - 自定义容器
 ---
 # 自定义容器

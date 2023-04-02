@@ -1,128 +1,124 @@
 module.exports = {
-    title: '花诽语Blog',
-    description: '基于VuePress的Blog',
-    theme: '@vuepress/theme-blog',
+    // 基础配置
+    title: '花诽语Blog',//花诽语Blog
+    description: '基于VuePress框架搭建的个人笔记网站',
+    // docsDir: 'blog/_posts',
+    head: [
+        ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
+        ["link", { rel: "stylesheet", href: "https://at.alicdn.com/t/c/font_3990738_8y38z31ubdc.css" }],
+    ],
+    // 日期格式设置
     dateFormat: 'YYYY-MM-DD',
     // permalink: "/:year/:month/:day/:slug",
+    // 插件设置
     plugins: [
         ['@vuepress/back-to-top'],
-        [
-            '@vssue/vuepress-plugin-vssue', {
-                platform: 'github',
-                // 其他的 Vssue 配置
-                owner: 'sakurafeiyu',
-                locale: 'zh-CN',
-                repo: 'a1046700338/MyPress',
-                // 为了避免泄露 clientId,clientSecret 我已经写死在源码里了
-                clientId: 'd6254a96649f1d95adfa'
-            }
-        ],
         ['@vuepress/nprogress'],
-        ['@vuepress/medium-zoom', {
-            selector: 'img.zoom-custom-imgs',
-            // medium-zoom options here
-            // See: https://github.com/francoischalifour/medium-zoom#options
-            options: {
-                margin: 16
-            }
-        }],
-        ['@vuepress/active-header-links'],
-        ['@vuepress/pwa', {
-            serviceWorker: false,
-            updatePopup: true
-        }],
-        ['@vuepress/blog',
-            {
-                directories: [
-                    {
-                        // Unique ID of current classification
-                        id: 'post',
-                        // Target directory
-                        dirname: '_posts',
-                        // Path of the `entry page` (or `list page`)
-                        path: '/posts/',
-                        itemPermalink: '/post/:year/:month/:day/:slug',
-                        pagination: {
-                            prevText: '上一页',
-                            nextText: '下一页',
-                            lengthPerPage: 6,
-                        },
-                        layout: 'MyIndexPost',
-                        itemLayout: 'MyPost'
-                    },
-                ],
-                frontmatters: [
-                    {
-                        // Unique ID of current classification
-                        id: 'tags',
-                        // Decide that the frontmatter keys will be grouped under this classification
-                        keys: ['tags'],
-                        // Path of the `entry page` (or `list page`)
-                        path: '/tag/',
-                        // Layout of the `entry page`
-                        layout: 'Tags',
-                        // Layout of the `scope page`
-                        scopeLayout: 'Tag'
-                    },
-                ],
-            },
-        ],
-    ],
-    themeConfig: {
-        logo: '../favicon.png', // 导航栏logo
-        nav: [
-            { text: '首页', link: '/' },
-            { text: '文章', link: '/posts/' },
-            { text: '关于', link: '/about/' }
-        ],
-        footer: {
-            contact: [
-                {
-                    type: 'mail',
-                    link: 'mailto:sakurafeiyu666@163.com'
-                },
-                {
-                    type: 'music',
-                    link: 'https://music.163.com/#/user/home?id=304008837'
+        ['meting'],
+        [
+            '@vuepress/medium-zoom', {
+                selector: 'img.zoom-custom-imgs',
+                // medium-zoom options here
+                // See: https://github.com/francoischalifour/medium-zoom#options
+                options: {
+                    margin: 16
                 }
-            ],
-            copyright: [
-                {
-                    text: '蜀ICP备2022016473号-1',
-                    link: 'https://beian.miit.gov.cn/'
-                },
-                {
-                    text: '川公网安备 51030002000194号',
-                    link: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51030002000194'
-                },
-                {
-                    text: 'Copyright © 2023-present 花诽语',
-                    link: 'https://sakurafeiyu.top',
-                },
-                {
-                    text: 'VuePress v1.9.9',
-                    link: 'https://www.npmjs.com/package/vuepress',
-                },
-            ],
-        },
-        lastUpdated: 'Last Updated', // string | boolean
+            }
+        ],
+        [
+            '@vuepress/register-components',{
+                componentsDir: [
+                    'DemoLayout'
+                ]
+            }
+        ],
+        [
+            'vuepress-plugin-comment',{
+                choosen: 'valine',
+                options: {
+                    el: '#valine-vuepress-comment',
+                    appId: 'CkA59kaHWYymv3LzYGFO2yT9-gzGzoHsz',
+                    appKey: 'gP0FoW0FBogrBv1NT1WSrzJt'
+                }
+            }
+        ],
+        ['vuepress-plugin-awesome-musicplayer'],
+        ['@vuepress-reco/extract-code'],
+        ['@vuepress/active-header-links'],
+    ],
+    // 主题配置
+    theme: 'reco',//@vuepress/theme-blog
+    themeConfig: {
+        type: 'blog',
+        noFoundPageByTencent: false,
+        logo: '../favicon.png', // 导航栏logo
+        authorAvatar: '../avatar.png', // 头像
+        author: '花诽语',
+        nav: [
+            { text: '时间轴', link: '/timeline/', icon: 'iconfont feiyu-shijian' },
+            { text: '我的音乐', link: '/music/', icon: 'iconfont feiyu-music' },
+            { text: '相册', link: '/remember/', icon: 'iconfont feiyu-xiangce' },
+            { text: '网址导航', link: '/navigation/', icon: 'iconfont feiyu-daohang' },
+            { text: '关于', link: '/about/', icon: 'iconfont feiyu-guanyuwomen' }
+        ],
+        lastUpdated: true, // string | boolean
         sidebar: 'auto', //自动生成侧边栏
         smoothScroll: true, //页面滚动
         // 以下是Git仓库编辑链接
         repo: 'a1046700338/MyPress',
-        docsBranch: 'main',
+        docsBranch: 'theme-reco',
         editLinks: true,
-        editLinkText: '帮助我们改善此页面！'
-    },
-    head: [
-        ['link', { rel: 'shortcut icon', href: '../favicon.png' }],
-        ['link', { rel: 'manifest', href: '../manifest.json' }],
-        ['meta', { name: 'theme-color', content: '#3e73af' }],
-        ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-        ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-        ['link', { rel: 'apple-touch-icon', href: '../icons/apple-touch-icon-152x152.png' }],
-        ['link', { rel: 'mask-icon', href: '../icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
-        ['meta', { name: 'msapplication-TileImage', content: '../icons/msapplication-icon-144x144.png' }],
-        ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
-    ],
+        editLinkText: '帮助我们改善此页面！',
+        blogConfig: {
+            category: {
+                location: 2,     // 在导航栏菜单中所占的位置，默认2
+                text: '分类' // 默认文案 “分类”
+            },
+            tag: {
+                location: 3,     // 在导航栏菜单中所占的位置，默认3
+                text: '标签'      // 默认文案 “标签”
+            },
+            socialLinks: [     // 信息栏展示社交信息
+                { icon: 'iconfont feiyu-github', link: 'https://github.com/a1046700338' },
+                { icon: 'iconfont feiyu-email-fill', link: 'mailto:sakurafeiyu666@163.com' },
+                { icon: 'iconfont feiyu-gitee-fill-round', link: 'https://gitee.com/sakurafeiyu/' },
+                { icon: 'iconfont feiyu-qq', link: 'https://qm.qq.com/cgi-bin/qm/qr?k=x4k21vSH5aDQTQZIUwAA2oFnuwEC43J4&noverify=0' },
+            ],    
+        },
+        // or
+        // vssueConfig: {
+        //     platform: 'github',
+        //     owner: 'sakurafeiyu',
+        //     repo: 'a1046700338/MyPress',
+        //     clientId: 'd6254a96649f1d95adfa',
+        //     clientSecret: '',
+        // },
+        friendLink: [
+            {
+                title: '野草',
+                desc: '一切都是那么的不尽人意',
+                logo: 'http://api.sakurafeiyu.top/imgs/link_imgs/yecao.jpg',
+                link: 'https://zjzh_yecao.gitee.io/'
+            },
+            {
+                title: '⭐️齐下无贰⭐️',
+                desc: 'May all the beauty be bless.✨',
+                logo: 'http://api.sakurafeiyu.top/imgs/link_imgs/avatar1.png',
+                link: 'https://weidows.gitee.io'
+            },
+            {
+                title: "Yang's Harbor",
+                desc: 'Space of Tech, Love and Thought.',
+                logo: 'http://api.sakurafeiyu.top/imgs/link_imgs/avatar2.png',
+                link: 'https://discover304.top/'
+            },
+        ],
+        // 项目开始时间，只填写年份
+        startYear: '2020',
+        // 备案设置
+        record: '蜀ICP备2022016473号-1',
+        recordLink: 'https://beian.miit.gov.cn/',
+        cyberSecurityRecord: '川公网安备 51030002000194号',
+        cyberSecurityLink: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51030002000194',
+    }
 }

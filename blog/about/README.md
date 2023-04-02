@@ -1,10 +1,9 @@
 ---
 title: 关于
-date: 2023-03-07 23:55:09
+# date: 2023-03-07 23:55:09
 sidebar: false
 ---
 
-# 关于
 关于这个网站的目的主要还是为了方便自己记录一些笔记，分享一些知识，提升web应用能力。  
 对此项目有任何建议欢迎Email我，最后，感谢您的阅读。
 
@@ -13,7 +12,7 @@ sidebar: false
 <div>
     <input name="todo-list" type="checkbox" checked>导航页
     <br/>
-    <input name="todo-list" type="checkbox">music页
+    <input name="todo-list" type="checkbox" checked>music页
     <br/>
     <input name="todo-list" type="checkbox">网页内嵌套视频播放器
     <br/>
