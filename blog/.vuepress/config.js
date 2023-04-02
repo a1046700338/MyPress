@@ -32,16 +32,6 @@ module.exports = {
                 ]
             }
         ],
-        [
-            'vuepress-plugin-comment',{
-                choosen: 'valine',
-                options: {
-                    el: '#valine-vuepress-comment',
-                    appId: 'CkA59kaHWYymv3LzYGFO2yT9-gzGzoHsz',
-                    appKey: 'gP0FoW0FBogrBv1NT1WSrzJt'
-                }
-            }
-        ],
         ['vuepress-plugin-awesome-musicplayer'],
         ['@vuepress-reco/extract-code'],
         ['@vuepress/active-header-links'],
@@ -84,6 +74,10 @@ module.exports = {
                 { icon: 'iconfont feiyu-gitee-fill-round', link: 'https://gitee.com/sakurafeiyu/' },
                 { icon: 'iconfont feiyu-qq', link: 'https://qm.qq.com/cgi-bin/qm/qr?k=x4k21vSH5aDQTQZIUwAA2oFnuwEC43J4&noverify=0' },
             ],    
+        },
+        valineConfig: {
+            appId: 'CkA59kaHWYymv3LzYGFO2yT9-gzGzoHsz',// your appId
+            appKey: 'gP0FoW0FBogrBv1NT1WSrzJt', // your appKey
         },
         // or
         // vssueConfig: {

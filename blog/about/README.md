@@ -2,6 +2,7 @@
 title: 关于
 # date: 2023-03-07 23:55:09
 sidebar: false
+isComment: false
 ---
 
 关于这个网站的目的主要还是为了方便自己记录一些笔记，分享一些知识，提升web应用能力。  

@@ -55,8 +55,5 @@
     "vuepress": "^1.9.9",
     "vuepress-plugin-meting": "^0.3.3",
     "vuepress-theme-reco": "^1.6.17"
-  },
-  "dependencies": {
-    "vuepress-plugin-comment": "^0.7.3"
   }
 }

@@ -1,7 +1,7 @@
 ---
 title: 我的音乐
 sidebar: false
-comment: false
+isComment: false
 ---
 <Meting server="netease"
         type="playlist"

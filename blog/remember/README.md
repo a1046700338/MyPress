@@ -1,8 +1,8 @@
 ---
 pageClass: box-page-class
-comment: false
+isComment: false
 ---
-<BoxLayout :cardList='photoList' />
+<BoxLayout :cardList="photoList" />
 
 <script>
 export default {

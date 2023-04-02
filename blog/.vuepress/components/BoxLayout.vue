@@ -24,16 +24,16 @@ export default {
     name: 'BoxLayout',
     data() {
         return {
-            cardList: [
-                {
-                    title: 'test',/* 标题 */
-                    description: '',/* 描述 */
-                    date: '2023',/* 日期 */
-                    imgurl: '/avatar.png',/* 图片地址 */
-                    href: '',/* 跳转链接 */
-                },
-            ],
-
+            // cardList: [
+            //     {
+            //         title: 'test',/* 标题 */
+            //         description: '',/* 描述 */
+            //         date: '2023',/* 日期 */
+            //         imgurl: '/avatar.png',/* 图片地址 */
+            //         href: '',/* 跳转链接 */
+            //     },
+            // bug所在！data值已经在prop声明了，使用prop默认的值替代。在父组件已经创建声明data后面又在子组件的data声明和初始化，会造成冲突。
+            // ],
         }
     },
     props: ['cardList'],
