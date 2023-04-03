@@ -21,7 +21,7 @@ tag:
 
 可以通过npm或yarn（[npm是什么?]()）安装  
 而我选择直接引入  
-```HTML
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,6 +48,7 @@ tag:
 </body>
 </html>
 ```
+
 [![la1.md.png](https://b.picbed.cn/file/picbed-cn/2022/03/24/la1.md.png)](https://www.picbed.cn/image/roxU3)
 更多参数，[参见](https://aplayer.js.org/#/zh-Hans/?id=%E5%8F%82%E6%95%B0)  
 我想要引入我的网易云歌单，所以我需要用到[MetingJS](https://github.com/metowolf/MetingJS)  
@@ -110,14 +111,6 @@ volume:播放音量，值在1到0之间，默认值70%
 ```
 
 # 代码实现
-## codepen预览
-<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="yLpVENo" data-user="huafeiyu" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/huafeiyu/pen/yLpVENo">
-  Untitled</a> by sakurafeiyu (<a href="https://codepen.io/huafeiyu">@huafeiyu</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
 
 ```HTML
 <!DOCTYPE html>

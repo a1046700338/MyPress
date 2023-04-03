@@ -22,13 +22,13 @@ npm i
 ## 运行
 ```shell
 // 项目调试
-npm run dev
+npm run docs:dev
 // or
-// npm run blog:dev
+// npm run dev
 // 项目打包
-npm run build
+npm run docs:build
 // or
-// npm run blog:build
+// npm run build
 ```
 
 ## 加入了git commit规范
