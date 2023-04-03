@@ -1,15 +1,22 @@
 {
-  "name": "vuepress-theme-reco-plus",
-  "version": "1.0.0",
+  "name": "vuepress-theme-hope-template",
+  "version": "2.0.0",
   "description": "MyPress is Blog",
-  "main": "index.js",
+  "author": "sakurafeiyu",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vuepress dev blog",
-    "build": "vuepress build blog",
+    "docs:build": "vuepress build src",
+    "docs:clean-dev": "vuepress dev src --clean-cache",
+    "docs:dev": "vuepress dev src",
+    "docs:update-package": "npx vp-update",
     "commit": "git-cz && git push",
     "release": "release-it",
     "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a1046700338/MyPress.git"
   },
   "config": {
     "commitizen": {
@@ -17,43 +24,21 @@
     }
   },
   "changelog": {
-    "bugsUrl": "",
+    "bugsUrl": "https://github.com/a1046700338/MyPress/issues",
     "emojis": true,
     "authorName": true,
     "authorEmail": true
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/a1046700338/MyPress.git"
-  },
-  "keywords": [
-    "vuepress",
-    "mypress",
-    "blog"
-  ],
-  "author": "sakurafeiyu",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/a1046700338/MyPress/issues"
-  },
-  "homepage": "https://github.com/a1046700338/MyPress#readme",
   "devDependencies": {
-    "@vuepress/plugin-active-header-links": "^1.9.9",
-    "@vuepress/plugin-back-to-top": "^1.9.9",
-    "@vuepress/plugin-blog": "^1.9.4",
-    "@vuepress/plugin-container": "^2.0.0-beta.61",
-    "@vuepress/plugin-medium-zoom": "^1.9.9",
-    "@vuepress/plugin-nprogress": "^1.9.9",
-    "@vuepress/plugin-pwa": "^1.9.9",
-    "@vuepress/plugin-register-components": "^1.9.9",
-    "@vuepress/theme-blog": "^2.3.3",
+    "@vuepress/client": "2.0.0-beta.61",
     "commitizen": "^4.3.0",
     "conventional-changelog-cli": "^2.2.2",
     "conventional-changelog-custom-config": "^0.3.1",
     "cz-conventional-changelog": "^3.3.0",
-    "release-it": "^15.10.0",
-    "vuepress": "^1.9.9",
-    "vuepress-plugin-meting": "^0.3.3",
-    "vuepress-theme-reco": "^1.6.17"
+    "release-it": "^15.10.1",
+    "vue": "^3.2.47",
+    "vuepress": "2.0.0-beta.61",
+    "vuepress-plugin-search-pro": "^2.0.0-beta.200",
+    "vuepress-theme-hope": "2.0.0-beta.200"
   }
 }

@@ -2,7 +2,7 @@
 基于[VuePress](https://www.vuepress.cn/)修改的个人笔记网站
 
 ## 使用
-## theme-reco
+## theme-hope
 请克隆该分支:main
 ```shell
 git clone git@github.com:a1046700338/MyPress.git
