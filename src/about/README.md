@@ -37,12 +37,12 @@ next: false
 - ...
 # 联系方式
 <div>
-<i class="iconfont icon-email"></i>
+<i class="iconfont feiyu-email-fill"></i>
 <a target="_blank" rel="noopener" href="mailto:sakurafeiyu666@163.com">Email me</a>
 <span>|</span>
-<i class="iconfont icon-github"></i>
+<i class="iconfont feiyu-github"></i>
 <a target="_blank" rel="noopener" href="https://github.com/a1046700338">MyGitHub</a>
 <span>|</span>
-<i class="iconfont icon-gitee-fill-round"></i>
+<i class="iconfont feiyu-gitee-fill-round"></i>
 <a target="_blank" rel="noopener" href="https://gitee.com/sakurafeiyu/">MyGitee</a>
 </div>

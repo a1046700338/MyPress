@@ -35,7 +35,6 @@ export default {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 820px;
     padding: 20px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -47,6 +46,7 @@ export default {
     align-items: flex-start;
     flex-wrap: wrap;
     padding: 10px;
+    margin: 0 auto;
 }
 
 .dec {
@@ -70,8 +70,30 @@ export default {
     border-radius: 15px;
 }
 
-.card img:hover {
+.card:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     transition: all 0.5s;
+}
+/* 针对小屏优化页面大小 */
+@media (max-width: 280px) {
+    .nav-layout {
+        margin: 0 auto;
+        padding: 5px;
+    }
+    .box-main {
+        width: 220px;
+        padding: 2px;
+        margin: 0 auto;
+    }
+    .card {
+        width: 210px;
+        height: 60px;
+    }
+}
+@media (max-width: 512px) {
+    .nav-layout {
+        width: 230px;
+        margin: 0 auto;
+    }
 }
 </style>

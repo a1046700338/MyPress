@@ -8,16 +8,32 @@ editLink: false
 prev: false
 next: false
 ---
-正在开发中...
+<!-- <Meting server="netease"
+        type="playlist"
+        mid="2130110815"
+        :volume="0.5"
+        :lrc-type="3"/> -->
+
+正在开发中...  
+敬请期待
+
+# 开发过程
+我想使用像aplayer或是meting那样的音乐播放器，但一圈开下来也达不到我的要求，直到我看到了[这篇文章](https://daodaolee.cn/posts/vuepress_plugin_awesome_musicplayer.html)，`可视化音乐播放器`深深吸引了我，我决定以此为目标开发出适合自己音乐页的可视化音乐播放器插件。  
+vuepress_plugin_awesome_musicplayer 不完善的点：
+- 不支持播放列表
+- 不支持调整音量
+- 不支持api调用
+- 不支持上下一首
+
 
 # 联系方式
 <div>
-<i class="iconfont icon-email"></i>
+<i class="iconfont feiyu-email-fill"></i>
 <a target="_blank" rel="noopener" href="mailto:sakurafeiyu666@163.com">Email me</a>
 <span>|</span>
-<i class="iconfont icon-github"></i>
+<i class="iconfont feiyu-github"></i>
 <a target="_blank" rel="noopener" href="https://github.com/a1046700338">MyGitHub</a>
 <span>|</span>
-<i class="iconfont icon-gitee-fill-round"></i>
+<i class="iconfont feiyu-gitee-fill-round"></i>
 <a target="_blank" rel="noopener" href="https://gitee.com/sakurafeiyu/">MyGitee</a>
 </div>

@@ -44,10 +44,10 @@ export default {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: auto;
     padding: 20px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 0 auto;
 }
 
 .box-main {
@@ -55,7 +55,6 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* 对称轴居中 */
     flex-wrap: wrap;
     padding: 15px;
 }
@@ -65,7 +64,7 @@ export default {
 }
 
 .title {
-    background: #3e73af;
+    /* background: #3e73af; */
     box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
     border-radius: 15px;
     height: auto;
@@ -99,5 +98,29 @@ export default {
 .card img:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     transition: all 0.5s;
+}
+/* 针对小屏优化页面大小 */
+@media (max-width: 280px) {
+    .box-layout {
+        width: 200px;
+        margin: 0 auto;
+    }
+    .box-main {
+        padding: 0;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 512px) {
+    .box-layout {
+        width: 230px;
+        margin: 0 auto;
+    }
+}
+/* 针对大屏优化页面大小 */
+@media (min-width: 540px) and (max-width: 768px) {
+    .box-layout {
+        width: 460px;
+        margin: 0 auto;
+    }
 }
 </style>

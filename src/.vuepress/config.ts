@@ -110,10 +110,14 @@ export default defineUserConfig({
       green: "#3eaf7c",
       orange: "#fb9b5f",
     },
+    iconAssets: [
+      'iconfont',
+      'https://at.alicdn.com/t/c/font_3990738_0h929p7lck2d.css',
+    ],
     navbar: [
-      { text: '首页', link: '/' },
+      { text: '首页', link: '/', icon: 'iconfont feiyu-shouye' },
       { text: '时间轴', link: '/timeline/', icon: 'iconfont feiyu-shijian' },
-      { text: '友链', link: '/link/' },
+      { text: '友链', link: '/link/', icon: 'iconfont feiyu-link' },
       { text: '我的音乐', link: '/music/', icon: 'iconfont feiyu-music' },
       { text: '相册', link: '/remember/', icon: 'iconfont feiyu-xiangce' },
       { text: '网址导航', link: '/navigation/', icon: 'iconfont feiyu-daohang' },

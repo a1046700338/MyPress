@@ -11,6 +11,17 @@ next: false
 
 <LinkLayout :linkList="linkList"/>
 
+<hr/>
+<p>在下方评论区留言申请加入我的友链，请按如下格式提供信息：</p>
+<ul>
+    <li>博客名：花诽语</li>
+	<li>简介：授人与鱼不如授人与渔</li>
+	<li>图片：http://api.sakurafeiyu.top/imgs/1046700338.png</li>
+	<li>链接：https://sakurafeiyu.gitee.io/&nbsp;or&nbsp;https:a1046700338.github.io</li>
+</ul>
+
+
+
 <script>
 export default {
         data() {
