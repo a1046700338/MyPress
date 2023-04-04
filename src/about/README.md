@@ -14,11 +14,18 @@ next: false
 关于这个网站的目的主要还是为了方便自己记录一些笔记，分享一些知识，提升web应用能力。  
 对此项目有任何建议欢迎Email我，最后，感谢您的阅读。
 
-- [ ] 导航页
-- [ ] 相册页
-- [ ] music页
+
+- [ ] fix:页面布局还是有点问题
+- [ ] feat:引入iconfont
+- [ ] 音乐页
+- [x] 友链页
+- [x] 导航页
+- [x] 相册页
 - [x] 网页内嵌套视频播放器
 
+::: tip
+目前关于组件化的开发进行到了这里，如果你想了解更多关于VuePress注册组件的相关内容请持续关注我，或查看[官方文档](https://v2.vuepress.vuejs.org/zh/reference/plugin/register-components.html)，thank u。
+:::
 # 内容
 - **Blog**
 - **知识分享**

@@ -148,6 +148,3 @@ function Board(state){
 # React Native官方文档
 
 # 练习
-
-
-<Vssue :title="$title" />

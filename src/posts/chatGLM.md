@@ -29,7 +29,7 @@ ChatGLM 是清华大学的开源项目，其 ChatGLM-6B 是一个开源的、支
 
 对应你的显存大小来启用bat
 ## 本地部署效果图
-![img]()
+![img](https://s1.ax1x.com/2023/04/04/pp4dZIU.png)
 
 ## 个人使用
 ### 常见问题

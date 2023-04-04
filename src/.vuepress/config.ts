@@ -1,10 +1,11 @@
 import { defineUserConfig } from "vuepress";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
-// import { getDirname, path } from "@vuepress/utils";
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+import { getDirname, path } from "@vuepress/utils";
 // import theme from "./theme.js";
 import { hopeTheme } from "vuepress-theme-hope";
 
-// const __dirname = getDirname(import.meta.url);
+const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
   base: "/",
@@ -16,7 +17,23 @@ export default defineUserConfig({
   //   }
   // },
   // theme,
+  // 原文：https://theme-hope.vuejs.press/zh/cookbook/advanced/component.html
+  // 由于“注册组件”是全局注册Vue组件，访问首页页面时就会载入，
+  // 会影响markdown页面的Vue SFC转换，所以使用“alias”避免在VuePress-Markdown中使用多于一个 <script> 标签。
+  alias: {
+    "@LinkLayout": path.resolve(__dirname, "components/LinkLayout.vue"),
+    "@BoxLayout": path.resolve(__dirname, "components/BoxLayout.vue"),
+    "@NavLayout": path.resolve(__dirname, "components/NavLayout.vue"),
+  },
   plugins: [
+    // 注册组件
+    registerComponentsPlugin({
+      // components: {
+      //   BoxLayout: path.resolve(__dirname, "./components/BoxLayout.vue"),
+      // }
+      // componentsDir写法，该文件夹下的组件都会被注册为Vue组件。
+      componentsDir: path.resolve(__dirname, './components'),
+    }),
     searchProPlugin({
       indexContent: true,
       // 给分类和标签添加索引
@@ -77,8 +94,13 @@ export default defineUserConfig({
         ]
       },
       comment: {
-        provider: "Waline",
-        serverURL: "https://cka59kah.lc-cn-n1-shared.com", // your server url
+        provider: 'Giscus',
+        repo: 'a1046700338/MyPress',
+        repoId: 'R_kgDOJGTYdg',
+        category: 'General',
+        categoryId: 'DIC_kwDOJGTYds4CVgwF',
+        lazyLoading: true,
+        reactionsEnabled: true
       },
     },
     // 主题色
@@ -91,6 +113,7 @@ export default defineUserConfig({
     navbar: [
       { text: '首页', link: '/' },
       { text: '时间轴', link: '/timeline/', icon: 'iconfont feiyu-shijian' },
+      { text: '友链', link: '/link/' },
       { text: '我的音乐', link: '/music/', icon: 'iconfont feiyu-music' },
       { text: '相册', link: '/remember/', icon: 'iconfont feiyu-xiangce' },
       { text: '网址导航', link: '/navigation/', icon: 'iconfont feiyu-daohang' },
