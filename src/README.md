@@ -3,7 +3,7 @@ home: true
 layout: BlogHome
 icon: home
 title: Home
-bgImage: /bg.jpg
+bgImage: /bg.webp
 heroText: 寄蜉蝣于天地，渺沧海之一粟。
 #tagline: 寄蜉蝣于天地，渺沧海之一粟。
 heroFullScreen: true

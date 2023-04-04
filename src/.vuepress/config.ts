@@ -102,6 +102,9 @@ export default defineUserConfig({
         lazyLoading: true,
         reactionsEnabled: true
       },
+      seo: {
+        autoDescription: true,
+      },
     },
     // 主题色
     themeColor: {

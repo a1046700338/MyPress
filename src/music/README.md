@@ -14,6 +14,19 @@ next: false
         :volume="0.5"
         :lrc-type="3"/> -->
 
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+<meting-js
+	server="netease"
+	type="playlist"
+	id="2130110815"
+        autoplay="false">
+</meting-js>
+
 正在开发中...  
 敬请期待
 
