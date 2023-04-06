@@ -6,9 +6,9 @@ icon: page
 # This control sidebar order
 order: 1
 # Set author
-author: Ms.Hope
+author: sakurafeiyu
 # Set writing time
-date: 2020-01-01
+date: 2023-04-05
 # A page can have multiple categories
 category:
   - Guide
@@ -21,9 +21,9 @@ sticky: true
 # this page will appear in starred articles
 star: true
 # You can customize footer content
-footer: Footer content for test
+footer: ""
 # You can customize copyright content
-copyright: No Copyright
+copyright: MIT Licensed | Copyright © 2020-present sakurafeiyu
 ---
 
 Content before `more` comment is regarded as page excerpt.
@@ -31,13 +31,8 @@ Content before `more` comment is regarded as page excerpt.
 <!-- more -->
 
 ## Page Information
-
+Hello!这是一个demo页，用于演示markdown的语法以及功能，尽情体验markdown扩展吧。
 You can set page information in Markdown’s Frontmatter.
-
-- The author is Ms.Hope.
-- The writing date is January 1, 2020
-- Category is "Guide"
-- Tags are "Page Config" and "Guide"
 
 ## Page Content
 

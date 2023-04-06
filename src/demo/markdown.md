@@ -44,12 +44,6 @@ By using [`vuepress-plugin-md-enhance`][md-enhance], the theme extends more Mark
 
 #### Custom Container
 
-::: v-pre
-
-Safely use {{ variable }} in Markdown.
-
-:::
-
 ::: info Custom Title
 
 A custom information container with `code`, [link](#custom-container).
@@ -106,73 +100,19 @@ Orange
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/tabs.html)
 
-#### Code Tabs
-
-::: code-tabs#shell
-
-@tab pnpm
-
-```bash
-pnpm add -D vuepress-theme-hope
-```
-
-@tab yarn
-
-```bash
-yarn add -D vuepress-theme-hope
-```
-
-@tab:active npm
-
-```bash
-npm i -D vuepress-theme-hope
-```
-
-:::
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/code-tabs.html)
-
 #### Superscript and Subscript
 
 19^th^ H~2~O
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/sup-sub.html)
 
-#### Align
-
-::: center
-
-I am center
-
-:::
-
-::: right
-
-I am right align
-
-:::
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/align.html)
-
-#### Attrs
-
-A **word**{#word} having id.
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/attrs.html)
-
-#### Footnote
+#### 脚注
 
 This text has footnote[^first].
 
 [^first]: This is footnote content
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/footnote.html)
-
-#### Mark
-
-You can mark ==important words== .
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/mark.html)
 
 #### Tasklist
 
@@ -187,43 +127,94 @@ Support setting color scheme and size
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/image.html)
 
-#### Chart
+#### Echarts
+::: details 一个基础南丁格尔玫瑰图案例
+```md
 
-::: chart A Scatter Chart
+::: echarts 一个基础南丁格尔玫瑰图案例
 
 ```json
 {
-  "type": "scatter",
-  "data": {
-    "datasets": [
-      {
-        "label": "Scatter Dataset",
-        "data": [
-          { "x": -10, "y": 0 },
-          { "x": 0, "y": 10 },
-          { "x": 10, "y": 5 },
-          { "x": 0.5, "y": 5.5 }
-        ],
-        "backgroundColor": "rgb(255, 99, 132)"
-      }
-    ]
+  "legend": {
+    "top": "bottom"
   },
-  "options": {
-    "scales": {
-      "x": {
-        "type": "linear",
-        "position": "bottom"
+  "toolbox": {
+    "show": true,
+    "feature": {
+      "mark": {
+        "show": true
+      },
+      "dataView": {
+        "show": true,
+        "readOnly": false
+      },
+      "restore": {
+        "show": true
+      },
+      "saveAsImage": {
+        "show": true
       }
     }
-  }
-}
+  },
+
 ```
 
 :::
 
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/chart.html)
+::: details 由于篇幅限制所以分段折叠这段长代码
+```md
+ "series": [
+    {
+      "name": "Nightingale Chart",
+      "type": "pie",
+      "radius": [20, 100],
+      "center": ["50%", "50%"],
+      "roseType": "area",
+      "itemStyle": {
+        "borderRadius": 8
+      },
+      "data": [
+        {
+          "value": 40,
+          "name": "rose 1"
+        },
+        {
+          "value": 38,
+          "name": "rose 2"
+        },
+        {
+          "value": 32,
+          "name": "rose 3"
+        },
+        {
+          "value": 30,
+          "name": "rose 4"
+        },
+        {
+          "value": 28,
+          "name": "rose 5"
+        },
+        {
+          "value": 26,
+          "name": "rose 6"
+        },
+        {
+          "value": 22,
+          "name": "rose 7"
+        },
+        {
+          "value": 18,
+          "name": "rose 8"
+        }
+      ]
+    }
+  ]
+}
+```
+:::
 
-#### Echarts
+:::
+
 
 ::: echarts A line chart
 
@@ -249,20 +240,79 @@ Support setting color scheme and size
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/echarts.html)
 
-#### Flowchart
+::: echarts 一个柱状图案例
 
-```flow
-cond=>condition: Process?
-process=>operation: Process
-e=>end: End
-
-cond(yes)->process->e
-cond(no)->e
+```json
+{
+  "xAxis": {
+    "type": "category",
+    "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  },
+  "yAxis": {
+    "type": "value"
+  },
+  "series": [
+    {
+      "data": [120, 200, 150, 80, 70, 110, 130],
+      "type": "bar",
+      "showBackground": true,
+      "backgroundStyle": {
+        "color": "rgba(180, 180, 180, 0.2)"
+      }
+    }
+  ]
+}
 ```
 
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/flowchart.html)
+:::
+
+- [View Detail](https://theme-hope.vuejs.press/zh/guide/markdown/echarts.html#%E6%9F%B1%E7%8A%B6%E5%9B%BE)
+
+::: echarts 一个散点图案例
+
+```json
+{
+  "xAxis": {},
+  "yAxis": {},
+  "series": [
+    {
+      "symbolSize": 20,
+      "data": [
+        [10.0, 8.04],
+        [8.07, 6.95],
+        [13.0, 7.58],
+        [9.05, 8.81],
+        [11.0, 8.33],
+        [14.0, 7.66],
+        [13.4, 6.81],
+        [10.0, 6.33],
+        [14.0, 8.96],
+        [12.5, 6.82],
+        [9.15, 7.2],
+        [11.5, 7.2],
+        [3.03, 4.23],
+        [12.2, 7.83],
+        [2.02, 4.47],
+        [1.05, 3.33],
+        [4.05, 4.96],
+        [6.03, 7.24],
+        [12.0, 6.26],
+        [12.0, 8.84],
+        [7.08, 5.82],
+        [5.02, 5.68]
+      ],
+      "type": "scatter"
+    }
+  ]
+}
+```
+
+:::
+
+- [View Detail](https://theme-hope.vuejs.press/zh/guide/markdown/echarts.html#%E6%95%A3%E7%82%B9%E5%9B%BE)
 
 #### Mermaid
+- [View Detail](https://theme-hope.vuejs.press/zh/guide/markdown/mermaid.html)
 
 ```mermaid
 ---
@@ -295,7 +345,7 @@ $$
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/tex.html)
 
-#### Include files
+#### 导入文件
 
 <!-- @include: ./README.md{11-17} -->
 
@@ -326,29 +376,6 @@ span {
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/demo.html)
 
-#### Stylize
-
-Donate Mr.Hope a cup of coffee. _Recommended_
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/stylize.html)
-
-#### Playground
-
-::: playground#ts TS demo
-
-@file index.ts
-
-```ts
-const msg = "hello world";
-
-const speak = (msg: string) => console.log(msg);
-
-speak(msg);
-```
-
-:::
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/playground.html)
 
 #### Vue Playground
 

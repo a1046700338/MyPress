@@ -15,8 +15,8 @@ next: false
 对此项目有任何建议欢迎Email我，最后，感谢您的阅读。
 
 
-- [ ] fix:页面布局还是有点问题
-- [ ] feat:引入iconfont
+- [x] fix:页面布局还是有点问题
+- [x] feat:引入iconfont
 - [ ] 音乐页
 - [x] 友链页
 - [x] 导航页

@@ -10,7 +10,7 @@ next: false
 ---
 
 <NavLayout :navList="navList"/>
-
+<ButtonCommponent/>
 <script>
 export default {
         data() {
