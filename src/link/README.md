@@ -1,5 +1,6 @@
 ---
 title: 友链💖
+toc: false
 sidebar: false
 article: false
 pageInfo: false
@@ -16,7 +17,7 @@ next: false
 <ul>
     <li>博客名：花诽语</li>
 	<li>简介：授人与鱼不如授人与渔</li>
-	<li>图片：http://api.sakurafeiyu.top/imgs/1046700338.png</li>
+	<li>图片：https://www.sakurafeiyu.top/logo.png</li>
 	<li>链接：https://sakurafeiyu.gitee.io/&nbsp;or&nbsp;https:a1046700338.github.io</li>
 </ul>
 
@@ -50,6 +51,12 @@ export default {
                                     description: 'Space of Tech, Love and Thought.',
                                     imgurl: '/logo.png',
                                     href: 'https://discover304.top/',
+                                },
+                                {
+                                    name: '浅海拾贝',
+                                    description: '寻找未知的技术拼图',
+                                    imgurl: 'https://terwer.space/logo.svg',
+                                    href: 'https://www.terwer.space/',
                                 },
                         ],
                 }

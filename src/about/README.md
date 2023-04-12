@@ -1,6 +1,7 @@
 ---
 title: 关于
 # date: 2023-03-07 23:55:09
+toc: false
 sidebar: false
 article: false
 pageInfo: false

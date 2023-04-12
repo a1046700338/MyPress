@@ -1,5 +1,6 @@
+[![](https://img.shields.io/static/v1?label=POWER&message=VuePress&color=brightgreen&style=flat-square)](https://vuepress.vuejs.org/zh/) [![](https://img.shields.io/static/v1?label=Theme&message=hope&color=blue&style=flat-square)](https://theme-hope.vuejs.press/zh/) [![](https://img.shields.io/static/v1?label=CDN&message=jsdelivr&color=orange&style=flat-square)](https://www.jsdelivr.com/) 
 # MyPress
-基于[VuePress](https://www.vuepress.cn/)修改的个人笔记网站
+基于[VuePress](https://www.vuepress.cn/)修改的个人笔记网站，主题使用[hope](https://theme-hope.vuejs.press/zh/)。
 
 ## 使用
 ## theme-hope

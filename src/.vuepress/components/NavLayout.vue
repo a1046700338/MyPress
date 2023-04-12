@@ -4,7 +4,7 @@
             <!-- 卡片 -->
             <li class="card">
                 <ul class="card_img">
-                    <img :src="item.imgurl" alt="this is images">
+                    <img :src="item.imgurl" alt="this is images" no-view>
                 </ul>
                 <ul class="card_title">
                     <a rel="noopener" :href="item.href" target="_blank">{{ item.title }}</a>

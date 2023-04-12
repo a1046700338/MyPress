@@ -1,5 +1,6 @@
 ---
 title: 相册
+toc: false
 sidebar: false
 article: false
 pageInfo: false

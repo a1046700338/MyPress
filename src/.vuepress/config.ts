@@ -10,6 +10,13 @@ const __dirname = getDirname(import.meta.url);
 export default defineUserConfig({
   base: "/",
   lang: "zh-CN",
+  title: '花诽语Blog',
+  description: '你知道吗，樱花飘落的速度是秒速五厘米',
+  markdown: {
+    headers: {
+      level: [2,3,4]
+    }
+  },
   // locales: {
   //   // 根据实际情况来，我不需要国际化，所以把en删了
   //   "/": {
