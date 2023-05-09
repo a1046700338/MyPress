@@ -5,7 +5,7 @@
 
 * 首次推送，基于theme-reco修改 ([6ac1db1](https://github.com/a1046700338/MyPress/commit/6ac1db1)) by: **a1046700338** (1046700338@qq.com)
 * 修改了自定义页面布局，自适应窗口，添加iconfont，更新posts ([c9258f0](https://github.com/a1046700338/MyPress/commit/c9258f0)) by: **a1046700338** (1046700338@qq.com)
-* 友链页图片不可被点击 ([e8be6fb](https://github.com/a1046700338/MyPress/commit/e8be6fb)) by: **a1046700338** (1046700338@qq.com)
+* 网址导航页图片不可被点击 ([e7656fd](https://github.com/a1046700338/MyPress/commit/e7656fd)) by: **a1046700338** (1046700338@qq.com)
 * 整体修改，全新的blog，广泛使用注册组件运用到自定义页面上。 ([d1de2f4](https://github.com/a1046700338/MyPress/commit/d1de2f4)) by: **a1046700338** (1046700338@qq.com)
 * update demo,add copyright ([baab160](https://github.com/a1046700338/MyPress/commit/baab160)) by: **a1046700338** (1046700338@qq.com)
 * update posts,add seo ([b394790](https://github.com/a1046700338/MyPress/commit/b394790)) by: **a1046700338** (1046700338@qq.com)

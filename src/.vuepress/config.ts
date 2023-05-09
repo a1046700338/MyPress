@@ -124,7 +124,7 @@ theme: hopeTheme({
   },
   iconAssets: [
     'iconfont',
-    'https://at.alicdn.com/t/c/font_3990738_0h929p7lck2d.css',
+    'https://at.alicdn.com/t/c/font_3990738_hdlcyym9qmo.css',
   ],
   navbar: [
     { text: '首页', link: '/', icon: 'iconfont feiyu-shouye' },
@@ -133,7 +133,13 @@ theme: hopeTheme({
     { text: '我的音乐', link: '/music/', icon: 'iconfont feiyu-music' },
     { text: '相册', link: '/remember/', icon: 'iconfont feiyu-xiangce' },
     { text: '网址导航', link: '/navigation/', icon: 'iconfont feiyu-daohang' },
-    { text: '关于', link: '../about/', icon: 'iconfont feiyu-guanyuwomen' }
+    { text: '栞栞', link: '/bot/', icon: 'iconfont feiyu-robot' },
+    {
+      text: "笔记",
+      icon: "iconfont feiyu-notes",
+      children: ["/notes/vue基础.md"],
+    },
+    { text: '关于', link: '../about/', icon: 'iconfont feiyu-guanyuwomen' },
   ],
 })
   // Enable it with pwa
