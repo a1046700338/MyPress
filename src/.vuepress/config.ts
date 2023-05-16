@@ -1,8 +1,9 @@
 import { defineUserConfig } from "vuepress";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
+import vuepressPluginMeting from "vuepress-plugin-meting"
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import { getDirname, path } from "@vuepress/utils";
-// import theme from "./theme.js";
+// import theme from "./theme.ts";
 import { hopeTheme } from "vuepress-theme-hope";
 
 const __dirname = getDirname(import.meta.url);

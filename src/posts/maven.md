@@ -9,16 +9,16 @@ tag:
 - 转载
 - 小白
 ---
-
-Maven is a software project management and comprehension tool. Based on the concept of a Project Object Model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.  
+ 
 > Maven是一个软件项目管理和理解工具。基于根据项目对象模型（POM）的概念，Maven可以管理项目的从中心信息构建、报告和记录。  
 <!-- more -->
 
 # maven
-[官网](https://maven.apache.org/) | [教程](https://www.runoob.com/maven/maven-setup.html) | [下载地址](https://maven.apache.org/download.cgi)  
+[官网](https://maven.apache.org/) | [教程](https://www.runoob.com/maven/maven-setup.html) | [下载地址](https://maven.apache.org/download.cgi) | [历史版本](https://archive.apache.org/dist/maven/maven-3/
+)
 
-`要浏览中央仓库的内容，maven 社区提供了一个 URL：http://search.maven.org/#browse。使用这个仓库，开发人员可以搜索所有可以获取的代码库。`
-http://search.maven.org/#browse https://mvnrepository.com/  
+## Maven阿里镜像配置
+https://developer.aliyun.com/mirror/maven
 
 ## Maven 引入外部依赖
 在你的 pom.xml 文件`<denpendencies></denpendencies>`节点中加入你要引用的文件信息：

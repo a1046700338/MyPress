@@ -11,3 +11,8 @@ footer: '<a href="https://beian.miit.gov.cn/" target="_blank"><span>蜀ICP备202
 <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51030002000194"><img src="http://api.sakurafeiyu.top/imgs/beian_icon.png"/><span>川公网安备 51030002000194号</span></a>'
 copyright: MIT Licensed | Copyright © 2020-present sakurafeiyu
 ---
+
+<Meting server="netease"
+        type="playlist"
+        mid="2539599584"
+        :lrc-type="3"/>
