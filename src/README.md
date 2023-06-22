@@ -12,7 +12,7 @@ footer: '<a href="https://beian.miit.gov.cn/" target="_blank"><span>蜀ICP备202
 copyright: MIT Licensed | Copyright © 2020-present sakurafeiyu
 ---
 
-<Meting server="netease"
+<!-- <Meting server="netease"
         type="playlist"
         mid="2539599584"
-        :lrc-type="3"/>
+        :lrc-type="3"/> -->
